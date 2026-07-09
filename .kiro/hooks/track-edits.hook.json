@@ -1,0 +1,13 @@
+{
+  "name": "Track File Edits",
+  "version": "1.0.0",
+  "description": "Detecta archivos editados y recuerda registrar la modificación",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["**/*"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Se editó un archivo. Registra este cambio ejecutando: node .kiro/agents/version-control/cli.js track-mod <ruta_relativa> \"descripción del cambio\". NO registres archivos dentro de .kiro/agents/version-control/versions/ ni .kiro/hooks/ ni .kiro/steering/."
+  }
+}

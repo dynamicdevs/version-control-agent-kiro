@@ -1,0 +1,13 @@
+{
+  "name": "Track File Changes",
+  "version": "1.0.0",
+  "description": "Detecta archivos nuevos y recuerda registrarlos en la versión activa",
+  "when": {
+    "type": "fileCreated",
+    "patterns": ["**/*"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Se creó un archivo nuevo. Registra este cambio ejecutando: node .kiro/agents/version-control/cli.js track-new <ruta_relativa> \"descripción\". NO registres archivos dentro de .kiro/agents/version-control/versions/."
+  }
+}

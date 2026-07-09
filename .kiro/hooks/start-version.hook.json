@@ -1,0 +1,12 @@
+{
+  "name": "▶ Iniciar Version Control",
+  "version": "1.0.0",
+  "description": "Botón manual para iniciar una nueva versión. Aparece en la sección Agent Hooks del explorador.",
+  "when": {
+    "type": "userTriggered"
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "node .kiro/agents/version-control/cli.js new \"Nueva sesión\""
+  }
+}

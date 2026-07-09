@@ -1,0 +1,6 @@
+# Version control agent - datos locales de cada usuario
+.kiro/agents/version-control/versions/v*/
+.kiro/agents/version-control/versions/.active-session
+
+# Node
+node_modules/

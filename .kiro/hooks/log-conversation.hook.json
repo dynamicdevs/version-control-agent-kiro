@@ -1,0 +1,12 @@
+{
+  "name": "Version Control - Log & Track",
+  "version": "3.0.0",
+  "description": "Registra conversación y trackea cambios en archivos. NO crea versiones automáticamente.",
+  "when": {
+    "type": "promptSubmit"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "VERSION CONTROL: Registro de actividad.\n\n1. Verifica si hay una versión activa ejecutando: node .kiro/agents/version-control/cli.js check-session __none__\n   - Si NO hay versión activa (needsNew:true), NO crees una automáticamente. Simplemente continúa con lo que pidió el usuario.\n   - Si hay versión activa, continúa normal.\n\n2. Si hay versión activa, registra el mensaje del usuario: node .kiro/agents/version-control/cli.js log-user \"<resumen corto>\"\n\n3. Al terminar tu respuesta, registra: node .kiro/agents/version-control/cli.js log-agent \"<resumen de lo que hiciste>\"\n\n4. Si creas archivos usa track-new. Si modificas usa track-mod.\n\n5. IMPORTANTE: Para crear una nueva versión (v2, v3, etc.) el usuario debe pedirlo explícitamente. Ejemplos:\n   - \"Crea una nueva versión\"\n   - \"Inicia versión 2\"\n   - \"Nueva versión: descripción\"\n   Solo entonces ejecuta: node .kiro/agents/version-control/cli.js new \"Descripción\"\n\nNO registres archivos dentro de .kiro/"
+  }
+}
