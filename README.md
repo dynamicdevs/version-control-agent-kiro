@@ -136,8 +136,6 @@ node .kiro/agents/version-control/cli.js subversions 1
 node .kiro/agents/version-control/cli.js new "Descripción"
 ```
 
-## Hecho por
-
-[DynamicDevs](https://github.com/DynamicDevs)
+## Construido por
 
 Mauricio De Juan · [mdejuan@dynamicdevs.io](mailto:mdejuan@dynamicdevs.io)
