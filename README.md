@@ -139,3 +139,5 @@ node .kiro/agents/version-control/cli.js new "Descripción"
 ## Hecho por
 
 [DynamicDevs](https://github.com/DynamicDevs)
+
+Mauricio De Juan · [mdejuan@dynamicdevs.io](mailto:mdejuan@dynamicdevs.io)
